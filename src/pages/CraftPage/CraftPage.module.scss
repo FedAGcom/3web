@@ -1,0 +1,79 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// .centralBlock {
+//   width: 343px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   position: relative;
+//   flex-grow: 1;
+// }
+
+.centralBlock {
+  @include centralBlockFlexGrow;
+}
+
+.sections {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 62%;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: $chernyy;
+  margin-bottom: 32px;
+}
+
+.blockFilterEquipment {
+  width: 343px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.filterButton {
+  border: 1px solid $chernyy;
+  border-radius: 51px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background: $background-second;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:active,
+  &.active {
+    border: 1px solid $chernyy;
+    background: $blue;
+  }
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cardWrapper {
+  width: calc(50% - 4px);
+  box-sizing: border-box;
+}

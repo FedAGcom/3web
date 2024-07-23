@@ -1,0 +1,28 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.container {
+  @include container;
+}
+
+.centralBlock {
+  @include centralBlockFlex1;
+  align-items: center; /* Центрируем карточки */
+}
+
+.sections {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 62%;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: $chernyy;
+  margin-bottom: 32px;
+}
+
+.cardsExchangeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
