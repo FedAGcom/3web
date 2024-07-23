@@ -5,7 +5,7 @@ import "./index.scss"
 import { TonConnectUIProvider } from "@tonconnect/ui-react"
 import { EnergyProvider } from "./context/EnergyContext"
 
-const manifestUrl = "https://FedAGcom.github.io/3web/tonconnect-manifest.json"
+const manifestUrl = "https://fedagcom.github.io/3web/tonconnect-manifest.json"
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false } },
