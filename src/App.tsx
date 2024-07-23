@@ -18,7 +18,7 @@ import { AmountProvider } from "./context/AmountContext"
 function App() {
   return (
     <AmountProvider>
-      <Router basename="/Demo_Web3_front_end">
+      <Router basename="/3web">
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route path="/login" element={<LoginPage />} />
